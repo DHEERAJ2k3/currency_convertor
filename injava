@@ -1,0 +1,115 @@
+import java.util.Scanner;
+class Hello
+{
+  public void rupees()
+  {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("enter the amount in rupees!");
+    int r = sc.nextInt();
+    double res1 = r*0.0095;
+    System.out.println("pound="+res1);
+    double res2 = r*0.012;
+    System.out.println("dollar="+res2);
+    double res3 = r*0.011;
+    System.out.println("euro="+res3);
+    double res4 = r*0.0037;
+    System.out.println("kuwaiti"+res4);
+  }
+
+  public void dollar()
+  {
+    System.out.println("enter the amount in dollar!");
+    Scanner sc = new Scanner(System.in);
+    int r2 = sc.nextInt();
+    double res5 = r2*83;
+    System.out.println("rupees:"+res5);
+    double res6 = r2*0.79;
+    System.out.println("pound:"+res6);
+    double res7 = r2*0.92;
+    System.out.println("euro:"+res7);
+    double res8 = r2*0.31;
+    System.out.println("kuwaiti:"+res8);
+  }
+
+  public void pound()
+  {
+    System.out.println("enter the amount in pound!");
+    Scanner sc = new Scanner(System.in);
+    int r3 = sc.nextInt();
+    double res9 = r3*105;
+    System.out.println("rupee:"+res9);
+    double res10 = r3*1.27;
+    System.out.println("dollar:"+res10);
+    double res11 = r3*1.17;
+    System.out.println("euro:"+res11);
+    double res12 = r3*0.39;
+    System.out.println("kuwaiti:"+res12);
+  }
+
+  public void euro()
+  {
+    System.out.println("enter the amount in euro!");
+    Scanner sc = new Scanner(System.in);
+    int r4 = sc.nextInt();
+    double res13 = r4*90.06;
+    System.out.println("rupee:"+res13);
+    double res14 = r4*0.85;
+    System.out.println("pound:"+res14);
+    double res15 = r4*1.09;
+    System.out.println("dollar:"+res15);
+    double res16 = r4*0.33;
+    System.out.println("kuwaiti"+res16);
+  }
+
+  public void kuwaiti()
+  {
+    System.out.println("enter the amount in kuwaiti!");
+    Scanner sc = new Scanner(System.in);
+    int r5 = sc.nextInt();
+    double res17 = r5*270;
+    System.out.println("rupee"+res17);
+    double res18 = r5*3.25;
+    System.out.println("dollar:"+res18);
+    double res19 = r5*2.56;
+    System.out.println("pound:"+res19);
+    double res20 = r5*2.99;
+    System.out.println("euro:"+res20);
+  }
+  public static void main(String[] args) 
+  {
+    System.out.println("WELCOME TO CURRENCY CONVERTER!!");
+    System.out.println("enter your currency code! (selsct the number)");
+    System.out.println("1.RUPEES \n2.Dollar \n3.Pound \n4.Euro \n5.Kuwaiti");
+    Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt();
+    if (n==1)
+    {
+      Hello obj = new Hello();
+      obj.rupees();
+    }
+    else if (n==2)
+    {
+      Hello obj1 = new Hello();
+      obj1.dollar();
+    }
+    else if (n==3)
+    {
+      Hello obj2 = new Hello();
+      obj2.pound();
+    }
+    else if (n==4)
+    {
+      Hello obj3 = new Hello();
+      obj3.euro();
+    }
+    else if (n==5)
+    {
+      Hello obj4 = new Hello();
+      obj4.kuwaiti();
+    }
+    else
+    {
+      System.out.println("please enter the numbers from 1 to 5 only!!");
+    }
+  }
+}
